@@ -1,1 +1,35 @@
 /* Main CSS */
+
+/* Toolbar styles */
+.toolbar {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.toolbar-fab,
+.tool-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: var(--toolbar-bg, #6200ee);
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar-palette {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toolbar.open .toolbar-palette {
+  display: flex;
+}
