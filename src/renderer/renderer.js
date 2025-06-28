@@ -31,6 +31,11 @@ export class Renderer {
       stave.setContext(context).draw();
 
       const voice = new VF.Voice({ num_beats: measure.beats, beat_value: measure.beatValue });
+      // Allow rendering even if the measure's duration is not completely filled.
+      // VexFlow voices are strict by default and will throw if the note durations
+      // do not sum to the expected number of beats. For interactive editing we
+      // want to show partial measures without errors.
+      voice.setStrict(false);
       const notes = measure.symbols.map(sym => {
         if (sym instanceof Note) {
           return new VF.StaveNote({
