@@ -1,4 +1,24 @@
-/* Main CSS */
+/* Main CSS - mobile first styles */
+:root {
+  --background: #fff;
+  --staff-color: #000;
+  --highlight: #FFD54F;
+  --toolbar-bg: #6200ee;
+  --viewport-bg: var(--background);
+  --control-size: 56px;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+#app {
+  max-width: 390px;
+  margin: 0 auto;
+  position: relative;
+}
 
 /* Toolbar styles */
 .toolbar {
@@ -9,11 +29,11 @@
 
 .toolbar-fab,
 .tool-btn {
-  width: 56px;
-  height: 56px;
+  width: var(--control-size);
+  height: var(--control-size);
   border-radius: 50%;
   border: none;
-  background: var(--toolbar-bg, #6200ee);
+  background: var(--toolbar-bg);
   color: #fff;
   font-size: 24px;
   display: flex;
