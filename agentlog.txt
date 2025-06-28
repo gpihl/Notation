@@ -3,3 +3,5 @@
 
 2025-06-29: Implemented domain model per T03. Added Note, Rest, Measure, and Score classes with insert/delete logic and beat overflow checks in src/model/score.js. Created test/score.test.mjs covering constructor defaults, insertion with new measure creation, error paths, rest handling, and deletion with measure cleanup. Tests run via Node and pass. No deviations from SPECIFICATION.
 2025-06-30: Implemented StateManager per T04 with event emitter pattern and mutation helpers in src/model/state-manager.js. Added demo script src/demo-state.js that logs changes. Created unit test test/state-manager.test.mjs verifying tool switching, symbol creation, updates, deletion, and event emission. All Node tests pass. No spec deviations.
+
+2025-06-30: Implemented geometry utilities per T05. Added pointToPitch, pointToInsertIndex, and snapPitch in src/util/geometry.js with basic pixel mapping and diatonic snapping. Created test/geometry.test.mjs covering these functions. All node tests pass. No spec deviations.
