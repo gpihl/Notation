@@ -1,1 +1,2 @@
 2025-06-28: Created repo skeleton per SPECIFICATION T01. Added /public and /src directories with placeholder JS and CSS files. Added CDN links for VexFlow and Font Awesome in public/index.html. Stubbed libs/ and icons/ directories with .gitkeep. No deviations from SPECIFICATION noted.
+2025-06-28: Implemented constants.js per T02 with durations enum, MIDI note name array, and color constants. Added Node test at test/constants.test.mjs verifying exports are frozen and contain expected values.
