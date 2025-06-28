@@ -12,3 +12,4 @@
 2025-07-04: Implemented main bootstrap per T10. Created src/main.js wiring Toolbar, StateManager, Viewport, Renderer, and GestureHandler. Added prompts for key and time signature and assigned resulting Score to state manager. All existing tests pass. No spec deviations.
 2025-07-05: Polished styles per T11. Added CSS variables and mobile-first layout rules in public/styles.css ensuring toolbar buttons remain ≥44px. All tests pass. No specification deviations.
 2025-07-06: Added manual test plan per T12. Created test-instructions.md with step-by-step testing guide for iOS Safari 16 and Chrome Desktop. No GIFs included due to environment limitations; specification allows steps as alternative. All node tests still pass.
+2025-06-28: Fixed index.html VexFlow CDN path causing VF undefined error. Updated to use unpkg v4.2.3 build and added explanatory comment. All Node tests pass.
