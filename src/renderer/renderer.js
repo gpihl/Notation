@@ -58,9 +58,11 @@ export class Renderer {
         }
       });
 
-      voice.addTickables(notes);
-      new VF.Formatter().joinVoices([voice]).format([voice], width - 20);
-      voice.draw(context, stave);
+      if (notes.length > 0) {
+        voice.addTickables(notes);
+        new VF.Formatter().joinVoices([voice]).format([voice], width - 20);
+        voice.draw(context, stave);
+      }
 
       x += width;
     }
