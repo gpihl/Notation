@@ -1,0 +1,1 @@
+2025-06-28: Created repo skeleton per SPECIFICATION T01. Added /public and /src directories with placeholder JS and CSS files. Added CDN links for VexFlow and Font Awesome in public/index.html. Stubbed libs/ and icons/ directories with .gitkeep. No deviations from SPECIFICATION noted.
