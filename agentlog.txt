@@ -5,3 +5,4 @@
 2025-06-30: Implemented StateManager per T04 with event emitter pattern and mutation helpers in src/model/state-manager.js. Added demo script src/demo-state.js that logs changes. Created unit test test/state-manager.test.mjs verifying tool switching, symbol creation, updates, deletion, and event emission. All Node tests pass. No spec deviations.
 
 2025-06-30: Implemented geometry utilities per T05. Added pointToPitch, pointToInsertIndex, and snapPitch in src/util/geometry.js with basic pixel mapping and diatonic snapping. Created test/geometry.test.mjs covering these functions. All node tests pass. No spec deviations.
+2025-07-01: Implemented renderer wrapper per T06. Created src/renderer/renderer.js that draws staves and notes using VexFlow, listens to state changes, and highlights the active symbol in yellow. No tests added as module depends on DOM. No spec deviations.
